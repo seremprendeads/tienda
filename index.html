@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <section class="menu">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle"><span style="font-size: 30px;font-weight:600;color: #1d1d1b;">Menú</span>
+                <img src="images/menu.png" class="menu-icono" alt="Menú">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>                
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Contacto</a></li>    
+                </ul>
+            </nav>
+
+
+
+        <div>
+    <ul>
+        <li class="submenu">
+            <!-- Ícono del carrito con contador -->
+            <img src="images/car.svg" id="img-carrito" alt="Carrito" data-count="0">
+            <div class="carrito">
+                <!-- Tabla del carrito -->
+                <table id="lista-carrito">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <!-- Botón para vaciar el carrito -->
+                <a href="#" id="vaciar-carrito" class="btn-roja">REINICIAR VOLVER A 0</a>
+            </div>
+        </li>
+    </ul>
+        </div>
+
+    </section>
+
+    <section class="hero">
+      
+        <div class="hero-content container">
+            <div class="hero-txt">
+                <span>Ofertas</span>
+                <h1>Frutas y Verduras</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus veritatis commodi, deleniti sint at eveniet doloribus, quisquam consequatur id quibusdam esse ipsam illum unde voluptatem hic quo! Facere, ea dicta.</p>
+            </div>
+            <div class="hero-img">
+                <img src="images/rigth.png" alt="Frutas y Verduras">
+            </div><br>
+       
+        </div>
+    </section>
+
+
+ 
+    <section class="information container">
+
+        <div class="information-content">
+
+            <div class="information-1">
+                 <img src="images/i1.svg" alt="i1">
+                     <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet 
+                    </p>
+            </div>     
+
+             <div class="information-1">
+                 <img src="images/i2.svg" alt="i2">
+                     <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet 
+                    </p>
+            </div>   
+
+             <div class="information-1">
+                 <img src="images/i2.svg" alt="i1">
+                     <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet 
+                    </p>
+            </div>   
+                    
+        </div>   
+
+    </section>
+
+    <section class="oferts container">
+
+        <div class="oferts-1">
+            <img src="images/f1.png" alt="f1">
+            <h3>Oferta</h3>
+            <p>premium</p>
+        </div>
+
+        <div class="oferts-1">
+            <img src="images/f2.png" alt="f2">
+            <h3>Oferta</h3>
+            <p>premium</p>
+        </div>
+
+        <div class="oferts-1">
+            <img src="images/f3.png" alt="f3">
+            <h3>Oferta</h3>
+            <p>premium</p>
+        </div>
+
+    </section>
+
+    <main class="produtcs container" id="lista-1">
+      
+          <h2>Productos destacados</h2> 
+
+        <div class="product-content">
+
+           
+            <div class="product">
+                <img src="images/pr1.png" alt="pr1">
+                <div class="product-txt">
+                 <h3>Producto</h3>
+                 <p class="precio">$15.00</p>
+                 <div class="contador product">
+                     <button class="btn-decrementar">-</button>
+                     <span class="cantidad">1</span>
+                     <button class="btn-incrementar">+</button>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+             </div>
+            </div>
+
+
+
+            
+             <div class="product">
+                <img src="images/pr1.png" alt="pr1">
+                <div class="product-txt">
+                 <h3>Producto</h3>
+                 <p class="precio">$15.00</p>
+                 <div class="contador product">
+                     <button class="btn-decrementar">-</button>
+                     <span class="cantidad">1</span>
+                     <button class="btn-incrementar">+</button>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+             </div>
+            </div>
+
+
+            
+             <div class="product">
+                <img src="images/pr1.png" alt="pr1">
+                <div class="product-txt">
+                 <h3>Producto</h3>
+                 <p class="precio">$15.00</p>
+                 <div class="contador product">
+                     <button class="btn-decrementar">-</button>
+                     <span class="cantidad">1</span>
+                     <button class="btn-incrementar">+</button>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+             </div>
+            </div>
+
+
+            
+             <div class="product">
+                <img src="images/pr1.png" alt="pr1">
+                <div class="product-txt">
+                 <h3>Producto</h3>
+                 <p class="precio">$15.00</p>
+                 <div class="contador product">
+                     <button class="btn-decrementar">-</button>
+                     <span class="cantidad">1</span>
+                     <button class="btn-incrementar">+</button>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+             </div>
+            </div>
+
+
+            
+             <div class="product">
+                <img src="images/pr1.png" alt="pr1">
+                <div class="product-txt">
+                 <h3>Producto</h3>
+                 <p class="precio">$15.00</p>
+                 <div class="contador product">
+                     <button class="btn-decrementar">-</button>
+                     <span class="cantidad">1</span>
+                     <button class="btn-incrementar">+</button>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+             </div>
+            </div>
+
+
+            
+             <div class="product">
+                <img src="images/pr1.png" alt="pr1">
+                <div class="product-txt">
+                 <h3>Producto</h3>
+                 <p class="precio">$15.00</p>
+                 <div class="contador product">
+                     <button class="btn-decrementar">-</button>
+                     <span class="cantidad">1</span>
+                     <button class="btn-incrementar">+</button>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+             </div>
+            </div>
+
+            
+            <div class="product">
+                <img src="images/pr1.png" alt="pr1">
+                <div class="product-txt">
+                 <h3>Producto</h3>
+                 <p class="precio">$15.00</p>
+                 <div class="contador product">
+                     <button class="btn-decrementar">-</button>
+                     <span class="cantidad">1</span>
+                     <button class="btn-incrementar">+</button>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+             </div>
+            </div>
+
+            
+             <div class="product">
+                <img src="images/pr1.png" alt="pr1">
+                <div class="product-txt">
+                 <h3>Producto</h3>
+                 <p class="precio">$15.00</p>
+                 <div class="contador product">
+                     <button class="btn-decrementar">-</button>
+                     <span class="cantidad">1</span>
+                     <button class="btn-incrementar">+</button>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+             </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="service">
+
+        <div class="service-1">
+            <img class="store"  src="images/1.png" alt="1p">
+        </div>
+
+         <div class="service-2">
+            <img class="store" src="images/2.png" alt="2p">
+        </div>
+
+         <div class="service-3">
+            <img class="store" src="images/3.png" alt="3p">
+        </div>
+
+    </section>
+
+    <section class="contact container">
+
+        <form>
+            <input type="email" placeholder="Correo">
+            <input type="submit" class="btn-3">
+        </form>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer> 
+
+
+   <script src="script.js"></script> 
+</body>
+</html>
