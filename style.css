@@ -82,36 +82,83 @@ input {
     display: none;
 }
 
+/* Estilo general del submenú */
 .submenu {
     position: relative;
-   
 }
 
-.submenu .carrito { /* Usamos .carrito en lugar de #carrito */
-    display: none;
+/* Estilo general del submenú */
+.submenu {
+    position: relative;
+    display: inline-block;
 }
 
-.submenu:hover .carrito { /* Usamos .carrito en lugar de #carrito */
-    display: block;
+.submenu img#img-carrito {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.carrito {
     position: absolute;
-    right: 0;
-    backdrop-filter: blur(10px); /* Corregido */
     top: 100%;
-    z-index: 1;
-    border: 1px solid rgba(78, 75, 88, 0.46); /* Corregido */
-    padding: 20px;
-    min-width: 400px;
-    background-color: #4e4b5076;
+    right: 0;
+    width: 350px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Ocultar por defecto */
+    z-index: 1000;
 }
 
-table {
+/* Mostrar el carrito al hacer hover */
+.submenu:hover .carrito {
+    display: block;
+}
+
+/* Tabla del carrito */
+#lista-carrito {
     width: 100%;
-   
+    border-collapse: collapse;
 }
 
-th, td {
-    color: #ffffff
-   
+#lista-carrito th,
+#lista-carrito td {
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+}
+
+#lista-carrito th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#lista-carrito tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Botón para vaciar el carrito */
+.btn-roja {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-roja:hover {
+    background-color: #c0392b;
 }
 
 
@@ -426,7 +473,67 @@ input {
     color: #474545;
 }
 
+/* Ajustes para pantallas pequeñas (360px de ancho) */
+@media (max-width: 360px) {
+       .carrito {
+        top: 50px;
+        right: 5px;
+        width: 95%;
+        max-height: 60%;
+        padding: 10px;
+        overflow-y: scroll;
+    }
+
+    #lista-carrito th,
+    #lista-carrito td {
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    .btn-roja {
+        font-size: 11px;
+        padding: 6px;
+        width: 90%;
+    }
+
+    img#img-carrito {
+        width: 22px;
+        height: 22px;
+    }
+}
+
 @media(max-width:991px) {
+     .carrito {
+        position: fixed; /* Fijar para mejor visibilidad */
+        top: 50px; /* Separación desde la parte superior */
+        right: 5px; /* Espaciado lateral */
+        width: 90%; /* Usar casi todo el ancho disponible */
+        max-height: 60%; /* Limitar altura para dispositivos pequeños */
+        overflow-y: auto; /* Scroll vertical habilitado */
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #lista-carrito th,
+    #lista-carrito td {
+        font-size: 12px; /* Reducir tamaño del texto */
+        padding: 5px;
+    }
+
+    #lista-carrito th {
+        text-align: center;
+    }
+
+    .btn-roja {
+        font-size: 12px;
+        padding: 8px;
+        width: 95%;
+    }
+
+    img#img-carrito {
+        width: 24px; /* Ícono más pequeño */
+        height: 24px;
+    }
     .menu {
         padding: 30px;
     }
@@ -491,6 +598,8 @@ input {
         flex-direction: column;
         text-align: center;
     }
+
+    
 }
 
 
